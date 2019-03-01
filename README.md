@@ -1,10 +1,12 @@
 [image1]: ./sentiment-model_picture.png "sentiment-model"
+[image2]: ./output_104_0.png "movie-review"
 # Deploying-a-Sentiment-Analysis-Model
 ## Introduction
 In this project you will construct a recurrent neural network or convolutional neural network for the purpose of determining the sentiment of a movie review using the IMDB data set. You will create this model using Amazon's SageMaker service. In addition, you will deploy your model and construct a simple web app which will interact with the deployed model.
 Under construction
 
 ![sentiment-model][image1]
+![movie-review][image2]
 
 ## Topics:
 In this project, we cover several areas:
@@ -41,7 +43,7 @@ The list below represents main libraries and its objects for the project.
 * [Amazon SageMaker](https://ap-northeast-2.console.aws.amazon.com/sagemaker/home?region=ap-northeast-2#/landing). (Build, train, and deploy a model)
 * [PyTorch](https://pytorch.org/) (LSTM classifier)
 
-## Delete the Endpoint
+### Delete the Endpoint
 Remember to always SHUT DOWN YOUR ENDPOINT if you are no longer using it. You are charged for the length of time that the endpoint is running so if you forget and leave it on you could end up with an unexpectedly large bill.
 ```
   predictor.delete_endpoint()
